@@ -14,7 +14,8 @@ spec:
     path: guestbook-with-sub-directories
     repoURL: "https://github.com/shivasaicharanruthala/LearnArgoCD.git"
     targetRevision: main
-    di
+    directory:
+      recurse: true
 
   syncPolicy:
     syncOptions:
