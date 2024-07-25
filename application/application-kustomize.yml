@@ -14,8 +14,10 @@ spec:
     path: kustomize-guestbook
     repoURL: "https://github.com/shivasaicharanruthala/LearnArgoCD.git"
     targetRevision: main
-    helm:
-      releaseName: my-helm-guestbook-release
+    kustomize:
+      namePrefix: staging-
+      commonLabels:
+        app: demo
 
   syncPolicy:
     syncOptions:
